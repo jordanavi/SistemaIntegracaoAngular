@@ -3,7 +3,7 @@ var app = angular.module('todoApp', [])
   
   var url = 'http://localhost:9000/clientes';
   
-  $scope.nomeTela = "Cadastro de Cliente";
+  $scope.nomeTela = "Cadastro de Professores";
 
   $scope.pesquisar = function() {
     $http.get(url).then(function (response) {
@@ -17,7 +17,7 @@ var app = angular.module('todoApp', [])
 $scope.salvar = function() {
     if (typeof $scope.cliente.codigo == 'undefined') {
         if (typeof $scope.cliente.nome == 'undefined') {
-            alert('Digite o nome do cliente');
+            alert('Digite o nome do professor');
         }else{
             $http.post(url,$scope.cliente).then(function (response) {
                 $scope.clientes.push(response.data);
@@ -40,7 +40,7 @@ $scope.salvar = function() {
 
 $scope.excluir = function() {
     if (typeof $scope.cliente.codigo == 'undefined') {
-        alert('Escolha um cliente');
+        alert('Escolha um professor');
     } else {
         urlExcluir = url+"/"+$scope.cliente.codigo;
         $http.delete(urlExcluir).then(function () {
