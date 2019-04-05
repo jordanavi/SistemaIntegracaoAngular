@@ -1,0 +1,17 @@
+<XDDOC>
+    <Metadado>
+        <Tipo>4</Tipo>
+        <Versao>100</Versao>
+    </Metadado>
+    <Header>
+        <DtMovto>2019-01-17</DtMovto>
+        <CodLegado>QM9</CodLegado>
+        <NrLegado>8537647825969243</NrLegado>
+    </Header>
+    <Saldo>
+        <Banco>3444</Banco>
+        <orgao>4444</orgao>
+        <Agencia>1500</Agencia>
+        <Conta>1099</Conta>
+    </Saldo>
+</XDDOC>
